@@ -1,0 +1,63 @@
+.header {
+  background-color: #5AA3E2;
+  width: 100%;
+  z-index: 3;
+}
+.header .nav {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.header .nav a {
+  color: #ffffff;
+}
+.header .nav a:hover {
+  color: #5aa3e2;
+}
+@media (min-width: 768px) {
+  .header .nav {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .header .nav {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .header .nav {
+    width: 1170px;
+  }
+}
+.content {
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.wrap {
+  margin: 0 auto 20px;
+  border-left: 2px solid #2786d8;
+  padding-left: 10px;
+}
+.wells {
+  width: 1000px;
+  margin: 0 auto 20px;
+}
+.item {
+  margin-bottom: 10px;
+}
+ul {
+  list-style: none;
+}
+ul > li > p {
+  margin-bottom: 0;
+  font-weight: 600;
+}
+ul > li > ul {
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+.docs-sidebar .nav {
+  top: 100px;
+}

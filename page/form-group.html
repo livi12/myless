@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>表单组</title>
+	<link rel="stylesheet" type="text/css" href="../dist/css/myless.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/doc.css">
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</head>
+<body>
+	<div class="wells">
+		<h2>模块化表单组件 .m-form-group </h2>
+		<div class="content">
+			<div class="wrap">
+				<h3>模块化表单应该注意的几个事项</h3>
+				<p>表单的结构 div.m-form-group>div.form-item>label.form-label+(div.form-con >……)</p>
+				<p>目前只给了一种表单形式，后续根据需要添加模块化</p>
+			</div>
+			<div class="wrap">
+				<div class="m-form-group">
+					<div class="form-item">
+						<label for="" class="form-label">输入框</label>
+						<div class="form-con"><input type="text" class="u-ipt">
+							<span class="form-tips">必填</span>
+							<div class="info">
+								<span class="form-err">输入框不能为空！</span>
+							</div>
+						</div>
+					</div>
+					<div class="form-item">
+						<label for="" class="form-label">输入框</label>
+						<div class="form-con">
+							<select name="" id="" class="u-select">
+								<option value="">11</option>
+								<option value="">22</option>
+								<option value="">33</option>
+							</select>
+							<span class="form-tips">必填</span>
+						</div>
+					</div>
+					<div class="form-item">
+						<label for="" class="form-label">下拉框</label>
+						<div class="form-con">
+							<div class="m-select m-select-color">
+								<div class="select-group">
+									<input type="text" class="select-ipt">
+									<input type="button" value="查询" class="select-btn">
+								</div>
+							    <ul class="select-menu">
+							        <li>option 1</li>
+							        <li>option 2</li>
+							        <li>option 3</li>
+							        <li>option 4</li>
+							        <li>option 5</li>
+							    </ul>
+							</div>
+							<span class="form-tips">必填</span>
+						</div>
+					</div>
+					<div class="form-item">
+						<label for="" class="form-label">复选框</label>
+						<div class="form-con  form-con-padding">
+							<label for="" class="form-wrap"><input type="checkbox" name="" id="" class="form-checkbox"><span>选一</span></label>
+							<label for="" class="form-wrap"><input type="checkbox" name="" id="" class="form-checkbox"><span>选二</span></label>
+						</div>
+					</div>
+					<div class="form-item">
+						<label for="" class="form-label">单选按钮</label>
+						<div class="form-con form-con-padding">
+							<label for="" class="form-wrap"><span>单选按钮1</span><input type="radio" name="" id="" class="form-radio"></label>
+							<label for="" class="form-wrap"><span>单选按钮2</span><input type="radio" name="" id="" class="form-radio"></label>
+							<span class="form-tips">二选一</span>
+						</div>
+					</div>
+					<div class="form-item">
+						<label for="" class="form-label">文本框</label>
+						<div class="form-con">
+							<textarea name="" id="" cols="30" rows="10" class="u-textarea"></textarea>
+							<span class="form-tips">不能超过200字</span>
+						</div>
+					</div>
+					<div class="form-item">
+						<label for="" class="form-label">文本</label>
+						<div class="form-con  form-con-padding"><p>我是文本文本文本！！！</p>
+						</div>
+					</div>
+					<div class="form-item">
+						<label for="" class="form-label">链接</label>
+						<div class="form-con form-con-padding"><a href="" class="u-link">我是链接链接！！！</a>
+						</div>
+					</div>
+					<div class="form-item">
+						<label for="" class="form-label">链接</label>
+						<div class="form-con form-con-padding"><a href="" class="form-link">我是表单链接链接！！！</a>
+						</div>
+					</div>
+					<div class="form-item">
+						<label for="" class="form-label">链接</label>
+						<div class="form-con form-con-padding"><a href="" class="form-tips">我是表单提示提示！！！</a>
+						</div>
+					</div>
+					<div class="form-item">
+						<label for="" class="form-label">链接</label>
+						<div class="form-con  form-con-padding"><a href="" class="form-err">我是表单错误提示！！！</a>
+						</div>
+					</div>
+					<div class="form-item">
+						<label for="" class="form-label">span标签</label>
+						<div class="form-con  form-con-padding">
+							<span class="form-span">span标签，标签！！！</span>
+						</div>
+					</div>
+					<div class="form-item">
+						<label for="" class="form-label">输入框</label>
+						<div class="form-con"><input type="text" class="u-ipt"><span class="form-err">span标签，标签！！！</span></div>
+					</div>
+					<div class="form-item">
+						<label for="" class="form-label">提交按钮</label>
+						<input type="button" class="u-btn u-btn-danger" value="提交">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

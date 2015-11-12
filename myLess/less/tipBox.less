@@ -1,0 +1,35 @@
+@import  'variables.less';
+@import  'mixins/opacity.less';
+.m-tipbox1{
+	width: @tipbox-width;
+	text-align: center;
+	height: @line-height-computed;
+	border-radius: @tipbox-border-radius;
+	padding: @tipbox-padding-vertical  @tipbox-padding-horizontal ;
+	background-color: rgba(red(@tipbox-bg-color),green(@tipbox-bg-color),blue(@tipbox-bg-color),@tipbox-opacity);
+	color: @tipbox-color;
+}
+
+.m-tipbox{
+	position: relative;
+	width: @tipbox-width + (@tipbox-padding-horizontal * 2);
+	height: @line-height-computed + (@tipbox-padding-vertical * 2);
+	.tipbox-bg{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: @tipbox-bg-color;
+		left: 0;
+		top: 0;
+		.opacity(@tipbox-opacity);
+		border-radius: @tipbox-border-radius;
+	}
+	.tipbox-content{
+		position: relative;
+		padding: @tipbox-padding-vertical  @tipbox-padding-horizontal ;
+		text-align: center;
+		z-index: 3;
+		color: @tipbox-color;
+	}
+}
+

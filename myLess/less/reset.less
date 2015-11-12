@@ -1,0 +1,125 @@
+@import 'variables.less';
+
+/*清除内外边距*/
+body,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{margin:0; padding:0;}
+
+/*设置默认字体*/
+body,textarea,input,button,select,keygen,legend{
+	font:@font-size-base / @line-height-base  @font-family-base;
+	color: @gray-dark;
+	outline:0;
+}
+code,kbd,pre,samp,tt{
+	font-family:"courier new",monospace,serif;
+}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal; font-weight:normal;}
+address,cite,dfn,em,var{font-style:normal;}
+
+/*HTML5支持*/
+header,footer,section,article,aside,nav,hgroup,address,figure,figcaption,menu,details{display:block;}
+
+/*重置表格元素*/
+table{border-collapse:collapse; border-spacing:0;}
+caption,th{text-align:left;}
+
+/*重置表单元素*/
+legend {color:#000;}
+fieldset,img,iframe,abbr,acronym{border:0;}
+button,input,select,textarea{font-size:100%;}
+textarea{overflow:auto; resize:none;}
+input[type="text"], input[type="password"]{text-indent:5px; *text-indent:0 !important;}
+
+/*重置列表元素*/
+ol,ul{list-style:none;}
+
+/*重置引用元素*/
+q::before,q::after{content:'';}
+
+/*重置文本格式元素*/
+a{
+	text-decoration:none;
+	color: @link-color;
+	&:hover{
+		color:@link-hover-color;
+		text-decoration: @link-hover-decoration;
+	}
+}
+del,ins,u,s{text-decoration:none;}
+a,button{cursor:pointer;}
+
+/*上下标签*/
+sub,sup{position:relative;font-size:75%;line-height:0;vertical-align:baseline}
+sup{top:-0.5em}
+sub{bottom:-0.25em}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+input[type=checkbox], input[type=radio]{
+	margin: 4px 0 0;
+	margin-top: 1px\9;
+	line-height: normal;
+}
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: @headings-font-family;
+  font-weight: @headings-font-weight;
+  line-height: @headings-line-height;
+  color: @headings-color;
+
+  small,
+  .small {
+    font-weight: normal;
+    line-height: 1;
+    color: @headings-small-color;
+  }
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3 {
+  margin-top: @line-height-computed;
+  margin-bottom: (@line-height-computed / 2);
+  small,
+  .small {
+    font-size: 65%;
+  }
+}
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  margin-top: (@line-height-computed / 2);
+  margin-bottom: (@line-height-computed / 2);
+
+  small,
+  .small {
+    font-size: 75%;
+  }
+}
+
+h1, .h1 { font-size: @font-size-h1; }
+h2, .h2 { font-size: @font-size-h2; }
+h3, .h3 { font-size: @font-size-h3; }
+h4, .h4 { font-size: @font-size-h4; }
+h5, .h5 { font-size: @font-size-h5; }
+h6, .h6 { font-size: @font-size-h6; }
+p {
+  margin: 0 0 (@line-height-computed / 2);
+}
+small,
+.small {
+  font-size: floor((100% * @font-size-small / @font-size-base));
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Accessor Properties Example</title>
+    <script type="text/javascript">
+
+        var book = {
+            _year: 2004,
+            edition: 1
+        };
+
+        Object.defineProperty(book, "year", {
+            get: function(){
+                return this._year;
+            },
+            set: function(newValue){
+
+                if (newValue > 2004) {
+                    this._year = newValue;
+                    this.edition += newValue - 2004;
+
+                }
+            }
+        });
+
+        //调用set函数
+        book.year = 2005;
+
+        //调用get函数
+       // alert(book._year);
+        alert(book.edition);   //2
+
+    </script>
+</head>
+<body>
+</body>
+</html>

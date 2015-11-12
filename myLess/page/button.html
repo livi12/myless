@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>button</title>
+	<link rel="stylesheet" type="text/css" href="../dist/css/myless.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/doc.css">
+</head>
+<body>
+	<div class="wells">
+		<h2>模块化button元件 .u-btn </h2>
+		<div class="content">
+			<div class="wrap">
+				<h3>button按元件大小划分</h3>
+				<ul>
+					<li>
+						<p>固定尺寸大小的元件，小中大三个尺寸，给定小中大尺寸的规格，以行内元素显示 display:inline-block</p>
+						<ul>
+							<li>.u-btn-sm</li>
+							<li>.u-btn-md</li>
+							<li>.u-btn-lg</li>
+						</ul>
+					</li>
+					<li>
+						<p>自适应按钮元件，高度给定三个尺寸，宽度自适应，以行内元素显示 display:inline-block</p>
+						<ul>
+							<li>.u-btn-auto-sm</li>
+							<li>.u-btn-auto-md</li>
+							<li>.u-btn-auto-lg</li>
+						</ul>
+					</li>
+					<li>
+						<p>块状显示的按钮元件，宽度按100%显示，display:block</p>
+						<ul>
+							<li>.u-btn-block-sm</li>
+							<li>.u-btn-block-md</li>
+							<li>.u-btn-block-lg</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="wrap">
+				<h3>button按元件外观划分 颜色、背景色、边框色</h3>
+				<p>按钮给定了五中基本款 ，default、primary、success、info、warning、danger</p>
+			</div>
+		</div>
+
+		<div class="m-button-group">
+			<a href="javascript:;" class="u-btn u-btn-sm u-btn-warning">小号button u-btn u-btn-sm u-btn-warning</a>
+			<a href="javascript:;" class="u-btn u-btn-md u-btn-primary">中号button bu-btn u-btn-md u-btn-primary</a>
+			<a href="javascript:;" class="u-btn u-btn-lg u-btn-success">大号button u-btn-lg u-btn-success</a>
+		</div>
+		<div class="m-button-group">
+			<input type="button" class="u-btn u-btn-auto-sm u-btn-danger" value="固定小">
+			<input type="button" class="u-btn u-btn-auto-md u-btn-primary" value="固定中">
+			<input type="button" class="u-btn u-btn-auto-lg u-btn-success" value="固定大">
+		</div>
+		<div class="m-button-group">
+			<input type="button" class="u-btn u-btn-block-sm u-btn-info" value="块状显示小">
+			<input type="button" class="u-btn u-btn-block-md u-btn-warning" value="块状显示中">
+			<input type="button" class="u-btn u-btn-block-lg u-btn-default" value="块状显示大">
+		</div>
+	</div>
+</body>
+</html>

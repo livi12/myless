@@ -1,0 +1,37 @@
+.docs-sidebar {
+  top: 100px;
+}
+.docs-sidebar .nav > li a {
+  background-color: transparent;
+  font-weight: normal;
+  color: #333333;
+}
+.docs-sidebar .nav > li a:focus,
+.docs-sidebar .nav > li a:hover,
+.docs-sidebar .nav > li a.active {
+  font-weight: 600;
+  text-decoration: none;
+  color: #333333;
+}
+.docs-sidebar .nav > li > a {
+  padding-left: 15px;
+  font-size: 16px;
+}
+.docs-sidebar .nav > li > a:focus,
+.docs-sidebar .nav > li > a:hover,
+.docs-sidebar .nav > li > a.active {
+  padding-left: 13px;
+  border-left: 2px solid #563d7c;
+}
+.docs-sidebar .nav > li .nav > li > a {
+  font-size: 12px;
+  padding-left: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.docs-sidebar .nav > li .nav > li > a:focus,
+.docs-sidebar .nav > li .nav > li > a:hover,
+.docs-sidebar .nav > li .nav > li > a.active {
+  padding-left: 29px;
+  border-left: 1px solid #563d7c;
+}

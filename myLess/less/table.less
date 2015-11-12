@@ -1,0 +1,78 @@
+@import "variables.less";
+.m-table{
+	width: 100%;
+	max-width: 100%;
+	margin-bottom: @line-height-computed;
+	background-color: @table-bg;
+	>thead,> tbody ,> tfoot{
+		> tr,{
+			> th, > td{
+				padding: @table-cell-padding;
+				line-height: @line-height-base;
+				vertical-align: top;
+				border-top: 1px solid @table-border-color;
+				text-align: center;
+			}
+			> .th-lt ,> .td-lt{
+				text-align: left;
+			}
+		}
+		> .tr-lt{
+			>th, >td{
+				text-align: left;
+			}
+		}
+	}
+
+	> thead > tr > th{
+		vertical-align: bottom;
+		border-bottom: 2px solid @table-border-color;
+	}
+
+	>thead:first-child{
+		>tr:first-child{
+			>th,td{
+				border-top: 0;
+			}
+		}
+	}
+
+	> tbody + tbody{
+		border-top: 2px solid @table-border-color;
+	}
+	.table{ background-color: @body-bg; }
+}
+
+.m-table-condensed{
+	>thead, > tbody, >tfoot{
+		> tr{
+			>th, >td{ padding: @table-condensed-cell-padding;}
+		}
+	}
+}
+
+.m-table-bordered{
+	border: 1px solid @table-border-color;
+	>thead, > tbody, >tfoot{
+		> tr{
+			>th, >td{border: 1px solid @table-border-color;}
+		}
+	}
+	> thead > tr {
+	    > th,> td {
+	      border-bottom-width: 2px;
+	    }
+	}
+}
+
+.m-table-striped{
+	> tbody > tr:nth-of-type(odd){
+		background-color: @table-bg-hover;
+	}
+}
+
+.m-table-hover{
+	> tbody > tr:hover{
+		background-color: @table-bg-hover;
+	}
+}

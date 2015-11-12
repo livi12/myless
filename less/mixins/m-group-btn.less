@@ -1,0 +1,20 @@
+.m-group-btn{
+	vertical-align: middle;
+	position: relative;
+	display: inline-block;
+	.u-btn{
+		&{margin-left:-1px;}
+		&:first-child{
+			margin-left: 0;
+			border-top-left-radius: @border-radius-base;
+			border-bottom-left-radius: @border-radius-base;
+		}
+		&:last-child{
+			border-top-right-radius: @border-radius-base;
+			border-bottom-right-radius: @border-radius-base;
+		}
+		&:hover,&.hover,&:active,&.active,&:focus{
+			background-color: darken(@btn-default-color,10%);
+		}
+	}
+}

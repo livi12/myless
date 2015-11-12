@@ -1,0 +1,17 @@
+@import "variables.less";
+@import "mixins/box-shadow.less";
+@import "mixins/input.less";
+.u-textarea{
+	width: @textarea-width;
+	.input-size(@padding-base-vertical + 1; @padding-base-horizontal; @font-size-base; @border-radius-large);
+	outline: 0;
+	border: 1px solid @input-border;
+	resize:none;
+	&:hover,
+	&:focus,
+	&.focus{
+		color: @btn-default-color;
+		.input-focus();
+	}
+
+}

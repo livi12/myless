@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Constructor Pattern Example 3</title>
+    <script type="text/javascript">
+    
+        function Person(name, age, job){
+            this.name = name;
+            this.age = age;
+            this.job = job;
+            this.sayName = sayName;
+        }
+        
+        function sayName(){
+            alert(this.name);
+        }
+        
+        var person1 = new Person("Nicholas", 29, "Software Engineer");
+        var person2 = new Person("Greg", 27, "Doctor");
+        
+        person1.sayName();   //"Nicholas"
+        person2.sayName();   //"Greg"
+        
+        alert(person1 instanceof Object);  //true
+        alert(person1 instanceof Person);  //true
+        alert(person2 instanceof Object);  //true
+        alert(person2 instanceof Person);  //true
+        
+        alert(person1.constructor == Person);  //true
+        alert(person2.constructor == Person);  //true
+        
+        alert(person1.sayName == person2.sayName);  //true        
+        
+        
+    </script>
+</head>
+<body>
+
+	<center>
+  <div style="font-size:15px; font-weight:bold; text-align:center; line-height:25px;">
+     源码由<a href="http://www.jq-school.com" target="_blank" style="color:#000">JquerySchool</a>网站整理（<a href="http://www.jq-school.com" target="_blank">http://www.jq-school.com</a>）学习交流QQ群<a target="_blank" href="http://wp.qq.com/wpa/qunwpa?idkey=f221dd676cd5f7f51f6b580ff8fe1bdd2fefe911ae0e1137a6f79c58d6e11ebf"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="Jquery学堂QQ⑧群" title="Jquery学堂QQ⑧群"></a></div>
+</center>
+</body>
+</html>

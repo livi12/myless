@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>原型链</title>
+</head>
+<body>
+	<script type="text/javascript">
+	//返回一个函数数组
+		function createFunction(){
+			var result=new Array();
+			for( var i=0;i<10; i++){
+				result[i]=function(num){
+					return function(){
+						return num;
+					}
+					}(i)
+			}
+			return result;
+		}
+
+		var h1=createFunction();
+		for(var i=0;i<10;i++){
+			console.log(h1[i]());
+		}
+
+		//返回一个数组
+		function createFunction2(){
+			var result=new Array();
+			for( var i=0;i<10; i++){
+				//函数表达式的值
+				result[i]=function(num){
+						return num;
+					}(i)
+			}
+			return result;
+		}
+
+		var h2=createFunction2();
+		for(var i=0;i<10;i++){
+			console.log(h2[i]);
+		}
+
+		//返回一个数组
+		function createFunction3(){
+			var result=new Array();
+			for( var i=0;i<10; i++){
+				//返回函数 此处函数声明中的i为参数名，不是传进来的值
+				result[i]=function(i){
+					console.log(i)
+						return i;
+					}
+			}
+			return result;
+		}
+
+		var h3=createFunction3();
+		for(var i=0;i<10;i++){
+			console.log(h3[i]());
+		}
+
+		var name ="The Window";
+		var object={
+			name: "My Object",
+			getNameFunc: function(){
+				return function(){
+					return this.name;
+				}
+			}
+		};
+
+		//alert(object.getNameFunc()());
+		// var a=2;
+		// function b(a){
+		// 	alert(a);
+		// }
+		// b();
+	</script>
+</body>
+</html>

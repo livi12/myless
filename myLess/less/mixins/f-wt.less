@@ -1,0 +1,80 @@
+//生成一定间距的宽度值 @wt 为最大值， @n为间距
+.f-loop(@wt , @n ,@var) when (@wt >= @n) {
+	.f-@{var}@{wt}{
+		@{var}: 1px * @wt;
+	 }
+	.f-loop(@wt - @n,@n ,@var);
+}
+
+.f-width(@wt , @n ) when (@wt >= @n) {
+	.f-wt@{wt}{
+		width: 1px * @wt;
+	 }
+	.f-width(@wt - @n,@n);
+}
+.f-height(@wt , @n ) when (@wt >= @n) {
+	.f-ht@{wt}{
+		height: 1px * @wt;
+	 }
+	.f-height(@wt - @n,@n);
+}
+
+.f-marginLeft(@wt , @n ) when (@wt >= @n) {
+	.f-ml@{wt}{
+		margin-left: 1px * @wt;
+	 }
+	.f-marginLeft(@wt - @n,@n);
+}
+
+.f-marginRight(@wt , @n ) when (@wt >= @n) {
+	.f-mr@{wt}{
+		margin-right: 1px * @wt;
+	 }
+	.f-marginRight(@wt - @n,@n);
+}
+.f-marginTop(@wt , @n ) when (@wt >= @n) {
+	.f-mt@{wt}{
+		margin-top: 1px * @wt;
+	 }
+	.f-marginTop(@wt - @n,@n);
+}
+.f-marginBottom(@wt , @n ) when (@wt >= @n) {
+	.f-mb@{wt}{
+		margin-bottom: 1px * @wt;
+	 }
+	.f-marginBottom(@wt - @n,@n);
+}
+
+.f-percent-width(@wt , @step) when (@wt <= 100){
+	.f-percent-wt@{wt}{
+		width:@wt * 0.01  * 100%;
+	}
+	.f-percent-width(@wt + 5 , @step)
+}
+
+// .fwidth(@wt , @n) when (@wt >= @n) {
+// 	.f-wt@{wt}{
+// 		width: 1px * @wt;
+// 	 }
+// 	.fwidth(@wt - @n,@n);
+// }
+
+@property-width: width;
+@property-height: height;
+@property-margin-left: margin-left;
+@property-width: width;
+@property-width: width;
+@property-width: width;
+@property-width: width;
+// .f-wt(100 , 3 , @property-width ) !important;
+// .f-wt(100 , 3 , @property-height ) !important;
+// .f-wt(100 , 3 , @property-margin-left ) !important;
+
+// .f-width(20,5) !important;
+// .f-height(20,5) !important;
+// .f-marginLeft(20,5) !important;
+// .f-marginRight(20,5) !important;
+// .f-marginTop(20,5) !important;
+// .f-marginBottom(20,5) !important;
+//.f-percent-width(5,5) !important;
+

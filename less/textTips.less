@@ -1,0 +1,52 @@
+@import "variables.less";
+@import "mixins/bg-border-color.less";
+.m-tiptext{
+	&{
+		width: 100%;
+		padding: @tiptext-padding;
+		border-radius: @tiptext-border-radius;
+		&{
+			.iconfont{
+				font-size: 14px;
+				float: left;
+				line-height: @line-height-base;
+			}
+			.msg{
+				margin-left: 25px;
+				word-break: break-all;
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	&-err{
+		.borderen(@tiptext-err-bg-color ; @darken-precnet);
+		.iconfont{
+			color: @tiptext-err-color;
+		}
+	}
+	&-warning{
+		.borderen(@tiptext-warning-bg-color ; @darken-precnet);
+		.iconfont{
+			color: @tiptext-warning-color;
+		}
+	}
+	&-success{
+		.borderen(@tiptext-success-bg-color ; @darken-precnet);
+		.iconfont{
+			color: @tiptext-success-color;
+		}
+	}
+	&-question{
+		.borderen(@tiptext-question-bg-color ; @darken-precnet);
+		.iconfont{
+			color: @tiptext-question-color;
+		}
+	}
+	&-stop{
+		.borderen(@tiptext-stop-bg-color ; @darken-precnet);
+		.iconfont{
+			color: @tiptext-stop-color;
+		}
+	}
+}

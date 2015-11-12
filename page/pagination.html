@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>表格</title>
+	<link rel="stylesheet" type="text/css" href="../dist/css/myless.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/doc.css">
+</head>
+<body>
+	<div class="wells">
+		<h2>分页 模块化，基础类为 m-page-wrap  </h2>
+		<div style="width:1000px;">
+			<div class="m-page-wrap" id="divPage">
+				<ul class="f-bfc f-fr">
+					<li class="m-page-first"><a href="javascript:void(0)">首 页</a></li>
+					<li class="m-page-prev"><a href="javascript:void(0)">上一页</a></li>
+					<li>
+						<ul class="m-pages">
+							<li class="j-page-item m-page-cur-page" pageno="1"><a href="javascript:void(0)">1</a></li>
+							<li class="j-page-item" pageno="2"><a href="javascript:void(0)">2</a></li>
+						</ul>
+					</li>
+					<li class="m-page-next"><a href="javascript:void(0)">下一页</a></li>
+					<li class="m-page-last"><a href="javascript:void(0)">末 页</a></li>
+					<li class="m-page-total"><span>共 2 页</span></li>
+					<li class="m-page-go">
+						<span>去</span>
+						<input type="text" class="j-page-ipt">
+						<div class="m-page-btn">
+							<button class="j-go">确定</button>
+							<span>页</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

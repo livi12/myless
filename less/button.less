@@ -1,0 +1,104 @@
+@import "variables.less";
+@import "mixins/tab-focus.less";
+@import "mixins/opacity.less";
+@import "mixins/button.less";
+.u-btn{
+	display: inline-block;
+	margin-bottom: 0;
+	vertical-align: middle;
+	font-weight: @btn-font-weight;
+	text-align: center;
+	cursor: pointer;
+	background-image: none;
+	border:1px solid transparent;
+	white-space:nowrap;
+	.button-size(@padding-base-vertical; @padding-base-horizontal; @font-size-base; @line-height-base; @border-radius-base);
+
+	&:hover,
+	&:focus,
+	&.focus{
+		color: @btn-default-color;
+		text-decoration: none;
+	}
+
+	&:active,
+	&.active{
+		outline:0;
+		background-image: none;
+	}
+
+	&.disabled,
+	&[disabled],
+	fieldset[disabled] &{
+		cursor:@cursor-disabled;
+		pointer-events:none;
+		.opacity(.65);
+	}
+}
+
+
+//按钮的大小 大小固定
+.u-btn-sm {
+	width: @btn-width-small;
+  	.button-size(@padding-small-vertical; @padding-small-horizontal; @font-size-small; @line-height-small; @border-radius-small);
+}
+.u-btn-md {
+	width: @btn-width-base;
+ 	.button-size(@padding-base-vertical; @padding-base-horizontal; @font-size-base; @line-height-base; @border-radius-base);
+}
+.u-btn-lg {
+	width: @btn-width-large;
+ 	.button-size(@padding-large-vertical; @padding-large-horizontal; @font-size-large; @line-height-large; @border-radius-large);
+}
+
+//按钮的大小 大小自适应
+.u-btn-auto-sm {
+ 	.button-size(@padding-small-vertical; @padding-small-horizontal; @font-size-small; @line-height-small; @border-radius-small);
+}
+.u-btn-auto-md {
+ 	.button-size(@padding-base-vertical; @padding-base-horizontal; @font-size-base; @line-height-base; @border-radius-base);
+}
+.u-btn-auto-lg {
+ 	.button-size(@padding-large-vertical; @padding-large-horizontal; @font-size-large; @line-height-large; @border-radius-large);
+}
+
+//按钮的块状显示
+.u-btn-block-sm {
+	width: 100%;
+	display: block;
+ 	.button-size(@padding-small-vertical; @padding-small-horizontal; @font-size-small; @line-height-small; @border-radius-small);
+}
+.u-btn-block-md {
+	width: 100%;
+	display: block;
+ 	.button-size(@padding-base-vertical; @padding-base-horizontal; @font-size-base; @line-height-base; @border-radius-base);
+}
+.u-btn-block-lg {
+	width: 100%;
+	display: block;
+ 	.button-size(@padding-large-vertical; @padding-large-horizontal; @font-size-large; @line-height-large; @border-radius-large);
+}
+
+//定义五中按钮的颜色 颜色、背景色、边框
+.u-btn-default {
+  .button-variant(@btn-default-color; @btn-default-bg; @btn-default-border);
+}
+.u-btn-primary {
+  .button-variant(@btn-primary-color; @btn-primary-bg; @btn-primary-border);
+}
+// Success appears as green
+.u-btn-success {
+  .button-variant(@btn-success-color; @btn-success-bg; @btn-success-border);
+}
+// Info appears as blue-green
+.u-btn-info {
+  .button-variant(@btn-info-color; @btn-info-bg; @btn-info-border);
+}
+// Warning appears as orange
+.u-btn-warning {
+  .button-variant(@btn-warning-color; @btn-warning-bg; @btn-warning-border);
+}
+// Danger and error appear as red
+.u-btn-danger {
+  .button-variant(@btn-danger-color; @btn-danger-bg; @btn-danger-border);
+}

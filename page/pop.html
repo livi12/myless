@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>弹出框</title>
+	<link rel="stylesheet" type="text/css" href="../dist/css/myless.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/doc.css">
+</head>
+<body>
+	<div class="wells">
+		<h2>模块化弹出框组件 .m-pop</h2>
+		<div class="concent">
+			<div class="wrap">
+				<h3>弹出框组件的结构</h3>
+				<p> div.m-pop-bg+div.m-pop>(div.pop-header>a.pop-close+h4.pop-title)+(div.pop-body)+(div.pop-footer) </p>
+				<p>高度的值来自于与button等高的值的设定，及设置sm，mg，lg的大小由之前设置的小中大的padding值决定</p>
+				<p>两种状态 不可点u-ipt-disabled , 错误提示u-ipt-err </p>
+			</div>
+		</div>
+	</div>
+	<div class="m-pop-bg"></div>
+	<div class="m-pop">
+		<div class="pop-header">
+			<a href="" class="pop-close iconfont">&#xf0155;</a>
+			<h4 class="pop-title">我是标题</h4>
+		</div>
+		<div class="pop-body">我是内容区域，东西扔进来吧</div>
+		<div class="pop-footer">
+			<div class="pop-btn-group">
+				<button class="u-btn u-btn-primary">提交</button>
+			</div>
+
+		</div>
+	</div>
+</body>
+</html>

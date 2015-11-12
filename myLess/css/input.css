@@ -1,0 +1,77 @@
+.u-ipt {
+  display: inline-block;
+  margin-bottom: 0;
+  vertical-align: middle;
+  font-weight: normal;
+  background-image: none;
+  border: 1px solid #cccccc;
+  white-space: nowrap;
+  line-height: 1;
+  height: 20px;
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 4px;
+}
+.u-ipt:hover,
+.u-ipt:focus,
+.u-ipt.focus {
+  color: #333333;
+}
+.u-ipt:hover,
+.u-ipt:focus,
+.u-ipt.focus,
+.u-ipt:hover:focus,
+.u-ipt:focus:focus,
+.u-ipt.focus:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow:  0 1px 1px rgba(0,0,0,.075) inset, 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow:  0 1px 1px rgba(0,0,0,.075) inset, 0 0 8px rgba(102, 175, 233, 0.6);
+}
+.u-ipt.disabled,
+.u-ipt[disabled],
+fieldset[disabled] .u-ipt,
+.u-ipt[readonly] {
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.65;
+  filter: apha(opacity=65);
+}
+.u-ipt-xs {
+  width: 95px;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 3px;
+}
+.u-ipt-sm {
+  width: 110px;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 3px;
+}
+.u-ipt-md {
+  width: 130px;
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 4px;
+}
+.u-ipt-lg {
+  width: 180px;
+  padding: 10px 16px;
+  font-size: 18px;
+  border-radius: 6px;
+}
+.u-ipt-block-sm {
+  width: 100%;
+  box-sizing: content-box;
+  display: block;
+  padding: 10px 16px;
+  font-size: 18px;
+  border-radius: 6px;
+}
+.u-ipt-err {
+  border-color: #ff0000;
+  outline: 0;
+  -webkit-box-shadow:  0 1px 1px rgba(0,0,0,.075) inset, 0 0 8px rgba(255, 0, 0, 0.6);
+  box-shadow:  0 1px 1px rgba(0,0,0,.075) inset, 0 0 8px rgba(255, 0, 0, 0.6);
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>select</title>
+	<link rel="stylesheet" type="text/css" href="../dist/css/myless.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/doc.css">
+</head>
+<body>
+	<div class="wells">
+		<h2>模块化 仿写select 元件 .u-select </h2>
+		<div class="content">
+			<div class="wrap">
+				<h3>原生的select组件高度不可调，样式不能改写，没必要模块化</h3>
+				<p>宽度设置四个值，及xs=95,sm=110,md=130,lg=180,这四个值的宽度由具体项目的中给定的输入框的值确定大小</p>
+				<p>高度的值来自于与button等高的值的设定，及设置sm，mg，lg的大小由之前设置的小中大的padding值决定</p>
+				<p>两种状态 不可点u-ipt-disabled , 错误提示u-ipt-err </p>
+			</div>
+			<div class="wrap">
+
+				<select name="" class="u-select" id="">
+					<option value="">option 1</option>
+					<option value="">option 2</option>
+					<option value="">option 3</option>
+					<option value="">option 4</option>
+					<option value="">option 5</option>
+				</select>
+
+				<div class="m-select m-select-color">
+					<div class="select-group">
+						<input type="text" class="select-ipt">
+						<input type="button" value="查询" class="select-btn">
+					</div>
+				    <ul class="select-menu">
+				        <li>option 1</li>
+				        <li>option 2</li>
+				        <li>option 3</li>
+				        <li>option 4</li>
+				        <li>option 5</li>
+				    </ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

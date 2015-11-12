@@ -1,0 +1,42 @@
+.button-size(@padding-vertical; @padding-horizontal; @font-size;@line-height; @border-radius){
+	padding: @padding-vertical @padding-horizontal;
+	font-size:@font-size;
+	line-height: @line-height;
+	border-radius: @border-radius;
+}
+
+.button-variant(@color; @backgroud; @border){
+	color: @color;
+	background-color: @backgroud;
+	border-color: @border;
+	&:hover,
+	&:focus,
+	&.focus,
+	&:active,
+	&.active{
+		color: @color;
+		background-color: darken(@backgroud,10%);
+		border-color: darken(@border,12%);
+	}
+	&:active,
+	&.active {
+		background-image: none;
+	}
+	&.disabled,
+	&[disable],
+	fieldset[disabled] &{
+		&,
+		&:hover,
+		&:focus,
+		&.focus,
+		&:active,
+		&.active{
+			background-color: @backgroud;
+			color: @color;
+		}
+	}
+	.badge{
+		color:@backgroud;
+		background-color: @color;
+	}
+}

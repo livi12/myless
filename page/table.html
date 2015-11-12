@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>表格</title>
+	<link rel="stylesheet" type="text/css" href="../dist/css/myless.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/doc.css">
+</head>
+<body>
+	<div class="wells">
+		<h2>table 模块化，基础类为 m-table  </h2>
+		<div class="content">
+			<h3>table的几种可选择模式</h3>
+			<p>m-table-condensed 紧凑性的表格</p>
+			<p>m-table-bordered 单元格带边线的表格</p>
+			<p>m-table-striped 整条带斑马线的表格</p>
+			<p>m-table-hover 鼠标移上去一行高亮的表格</p>
+			<p>这几种表格可以叠加使用</p>
+		</div>
+		<div class="wrap" style="width:1000px;">
+			<table class="m-table m-table-bordered m-table-condensed m-table-striped">
+				<thead>
+					<tr>
+						<th  class="th-lt">姓名</th>
+						<th>年龄</th>
+						<th>性别</th>
+						<th>电话</th>
+						<th>邮箱</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr  class="tr-lt">
+						<td>ann</td>
+						<td>23</td>
+						<td>M</td>
+						<td>13125436462</td>
+						<td>1@11.com</td>
+					</tr>
+					<tr>
+						<td>tom</td>
+						<td>24</td>
+						<td>F</td>
+						<td>13254369876</td>
+						<td>2@qq.com</td>
+					</tr>
+					<tr>
+						<td>Jimmy</td>
+						<td>24</td>
+						<td>M</td>
+						<td>18790239473</td>
+						<td>3@qq.com</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</body>
+</html>

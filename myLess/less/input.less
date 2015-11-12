@@ -1,0 +1,64 @@
+@import "variables.less";
+@import "mixins/tab-focus.less";
+@import "mixins/opacity.less";
+@import "mixins/input.less";
+@import "mixins/box-shadow.less";
+.u-ipt{
+	display: inline-block;
+	margin-bottom: 0;
+	vertical-align: middle;
+	font-weight: @btn-font-weight;
+	background-image: none;
+	border:1px solid @input-border;
+	white-space:nowrap;
+	line-height: 1;
+	height: @line-height-computed;
+	.input-size(@padding-base-vertical; @padding-base-horizontal; @font-size-base; @border-radius-base);
+
+	&:hover,
+	&:focus,
+	&.focus{
+		color: @btn-default-color;
+		.input-focus();
+	}
+
+	&.disabled,
+	&[disabled],
+	fieldset[disabled] &,&[readonly]{
+		cursor:@cursor-disabled;
+		pointer-events:none;
+		.opacity(.65);
+	}
+}
+
+
+//输入框的大小
+.u-ipt-xs {
+	width: @input-width-xs;
+  	.input-size(@padding-small-vertical; @padding-small-horizontal; @font-size-small; @border-radius-small);
+}
+.u-ipt-sm {
+	width:@input-width-small;
+  	.input-size(@padding-small-vertical; @padding-small-horizontal; @font-size-small; @border-radius-small);
+}
+.u-ipt-md {
+	width:@input-width-base;
+ 	.input-size(@padding-base-vertical; @padding-base-horizontal; @font-size-base; @border-radius-base);
+}
+.u-ipt-lg {
+	width:@input-width-large;
+ 	.input-size(@padding-large-vertical; @padding-large-horizontal; @font-size-large; @border-radius-large);
+}
+.u-ipt-block-sm {
+	width: 100%;
+	box-sizing: content-box;
+	display: block;
+ 	.input-size(@padding-large-vertical; @padding-large-horizontal; @font-size-large; @border-radius-large);
+}
+.u-ipt-err {
+	@color:#f00;
+	@color-rgba: rgba(red(@color),green(@color),blue(@color),.6);
+	border-color:@color;
+	outline: 0;
+	.box-shadow(~" 0 1px 1px rgba(0,0,0,.075) inset, 0 0 8px @{color-rgba}");
+}

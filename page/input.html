@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>input</title>
+	<link rel="stylesheet" type="text/css" href="../dist/css/myless.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/doc.css">
+</head>
+<body>
+	<div class="wells">
+		<h2>模块化input元件 .u-ipt</h2>
+		<div class="content">
+			<div class="wrap">
+				<h3>input按元件大小划分</h3>
+				<p>宽度设置四个值，及xs=95,sm=110,md=130,lg=180,这四个值的宽度由具体项目的中给定的输入框的值确定大小</p>
+				<p>高度的值来自于与button等高的值的设定，及设置sm，mg，lg的大小由之前设置的小中大的padding值决定</p>
+				<p>两种状态 不可点u-ipt-disabled , 错误提示u-ipt-err </p>
+			</div>
+			<div class="wrap">
+				<input type="text" class="u-ipt u-ipt-xs" value="极小">
+				<input type="text" class="u-ipt u-ipt-sm" value="小">
+				<input type="text" class="u-ipt u-ipt-md" value="中">
+				<input type="text" class="u-ipt u-ipt-lg" value="大">
+				<input type="text" class="u-ipt u-ipt-block-sm" value="百分百">
+			</div>
+			<div class="wrap">
+				<input type="text" class="u-ipt u-ipt-xs u-ipt-disabled" value="不可用" disabled="">
+				<input type="text" class="u-ipt u-ipt-xs u-ipt-err" value="错误">
+			</div>
+		</div>
+	</div>
+</body>
+</html>

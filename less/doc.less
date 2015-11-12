@@ -1,0 +1,67 @@
+@import "variables.less";
+.header {background-color: #5AA3E2;width: 100%;z-index: 3;}
+.header .nav{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    a{
+    	color: @headernav-color;
+    	&:hover{
+    		color: @headernav-color-hover;
+    	}
+    }
+
+}
+@media (min-width: 768px) {
+    .header .nav{
+        width:750px;
+    }
+}
+@media (min-width: 992px) {
+    .header .nav{
+        width:970px;
+    }
+}
+@media (min-width: 1200px) {
+    .header .nav{
+        width:1170px;
+    }
+}
+.content{
+	margin-bottom: @content-margin-bottom;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wrap{
+	margin: 0 auto @wrap-margin-bottom;
+	border-left: @border-left;
+	padding-left: 10px;
+}
+.wells{
+	width: @wells-width;
+	margin: 0 auto 20px;
+}
+.item{
+	margin-bottom: 10px;
+}
+
+ul{
+	list-style: none;
+	>li{
+		& >p{
+			margin-bottom: 0;
+			font-weight: 600;
+		}
+		& >ul{
+			padding-left: @ul-ul-padding-left;
+			margin-bottom: @ul-ul-margin-bottom;
+		}
+	}
+}
+.docs-sidebar{
+	.nav{
+	top: 100px;
+	}
+}

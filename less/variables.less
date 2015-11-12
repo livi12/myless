@@ -1,0 +1,267 @@
+//  变量
+//-------------------------------
+
+// 颜色值
+@gray-base:              		#000;
+@gray-darker:            		lighten(@gray-base, 13.5%); // #222
+@gray-dark:              		lighten(@gray-base, 20%);   // #333
+@gray:                   		lighten(@gray-base, 33.5%); // #555
+@gray-light:             		lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           		lighten(@gray-base, 93.5%); // #eee
+
+//基础色调
+@brand-primary: 		 		#72bf56;
+@brand-success:         		#5cb85c;
+@brand-info:            		#5bc0de;
+@brand-warning:        	 		#f0ad4e;
+@brand-danger:          		#d9534f;
+
+//背景色
+@body-bg: 						#fff;
+
+// 文本色
+@text-color: 					@gray-dark;
+
+//小号标题的颜色
+@headings-small-color:        @gray-light;
+//链接的颜色
+@link-color: 					@brand-primary;
+@link-hover-color: 				darken(@link-color,15%);
+@link-hover-decoration: 		underline;
+
+//font-family的取值
+@font-family-serif:       		"Microsoft YaHei",Georgia, "Times New Roman", Times, serif,"Sim sun";
+//** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
+@font-family-monospace:  	 	Menlo, Monaco, Consolas, "Courier New", monospace,"Microsoft YaHei","Sim sun";
+@font-family-base:        		@font-family-serif;
+
+//font-size字体的大小设置
+@font-size-base: 				14px;
+@font-size-large: 				ceil(@font-size-base * 1.25);	//18px;
+@font-size-small: 				ceil(@font-size-base * 0.85); 	//12px
+
+@font-size-h1: 					floor(@font-size-base * 2.6); 	//36px
+@font-size-h2: 					floor(@font-size-base * 2.15);	//20px
+@font-size-h3: 					floor(@font-size-base * 1.7); 	//24px
+@font-size-h4: 					floor(@font-size-base * 1.25);	//18px
+@font-size-h5: 					@font-size-base;				//14px
+@font-size-h6: 					floor(@font-size-base * 0.85);	//12px
+
+//line-height行高设置
+@line-height-base: 				1.428571429;
+@line-height-computed: 			floor((@font-size-base * @line-height-base));
+
+//** By default, this inherits from the `<body>`.
+@headings-font-family:    		inherit;
+@headings-font-weight:    		500;
+@headings-line-height:    		1.1;
+@headings-color:          		inherit;
+
+//u-btn 固定宽度的设置
+@btn-width-small: 				50px;
+@btn-width-base: 				80px;
+@btn-width-large: 				100px;
+
+//padding值的设置
+@padding-base-vertical: 		6px;
+@padding-base-horizontal: 		12px;
+
+@padding-large-vertical: 		10px;
+@padding-large-horizontal: 		16px;
+
+@padding-small-vertical: 		5px;
+@padding-small-horizontal: 		10px;
+
+
+@line-height-large: 			1.3333333;
+@line-height-small: 			1.5;
+
+@border-radius-base: 			4px;
+@border-radius-large: 			6px;
+@border-radius-small:			3px;
+
+@component-active-color: 		#fff;
+@component-active-bg: 			@brand-primary;
+
+@caret-width-base: 				4px;
+@caret-width-large: 			5px;
+
+//Buttons
+
+@btn-font-weight: 				normal;
+
+@btn-default-color: 			#333;
+@btn-default-bg: 				#fff;
+@btn-default-border: 			#ccc;
+
+@btn-primary-color:              #fff;
+@btn-primary-bg:                 @brand-primary;
+@btn-primary-border:             darken(@btn-primary-bg, 5%);
+
+@btn-success-color:              #fff;
+@btn-success-bg:                 @brand-success;
+@btn-success-border:             darken(@btn-success-bg, 5%);
+
+@btn-info-color:                 #fff;
+@btn-info-bg:                    @brand-info;
+@btn-info-border:                darken(@btn-info-bg, 5%);
+
+@btn-warning-color:              #fff;
+@btn-warning-bg:                 @brand-warning;
+@btn-warning-border:             darken(@btn-warning-bg, 5%);
+
+@btn-danger-color:               #fff;
+@btn-danger-bg:                  @brand-danger;
+@btn-danger-border:              darken(@btn-danger-bg, 5%);
+
+@btn-link-disabled-color: 		@gray-light;
+
+
+//form
+
+@input-bg: 						#fff;
+@input-bg-disabled: 			@gray-lighter;
+
+@input-color: 					@gray;
+@input-border: 					#ccc;
+@input-border-radius: 			@border-radius-base;
+@input-border-radius-large:		@border-radius-large;
+@input-border-radius-small: 	@border-radius-small;
+
+@input-border-focus: 			#66afe9;
+@input-color-placeholder: 		#999;
+
+@input-height-base: 			(@line-height-computed + (@padding-base-vertical * 2) + 2);
+@input-heigth-large: 			(ceil(@font-size-large * @line-height-large)+ (@padding-large-vertical *2 ) + 2);
+@input-height-small: 			(floor(@font-size-small *@line-height-small) + (@padding-small-vertical*2) + 2);
+
+@form-group-margin-buttom: 		15px;
+@legend-color: 					@gray-dark;
+@legend-border-color: 			#e5e5e5;
+@input-group-addon-bg: 			@gray-lighter;
+@input-group-addom-border-color:@input-border;
+@cursor-disabled: 				not-allowed;
+
+//input 的宽的值的设定
+@input-width-xs: 				95px;
+@input-width-small: 			110px;
+@input-width-base: 				130px;
+@input-width-large: 			180px;
+
+@input-err-border-color: 		#f00;
+
+//select
+@select-width: 				 	250px;
+@select-btn-width: 				40px;
+@select-li-hover: 				#eee;
+@padding-li-horizontal: 		8px;
+@padding-li-vertical: 			5px;
+@select-menu-border-color: 		#ccc;
+@select-menu-border-radius: 	5px;
+
+//textarea
+@textarea-width: 				300px;
+@textarea-padding-horizontal: 	6px;
+@textarea-padding-vertical: 	10px;
+
+
+//单链接样式
+@link-color:            		@brand-primary;
+@link-hover-color:      		darken(@link-color, 15%);
+@link-hover-decoration: 		underline;
+
+//form表单组件
+@form-item-margin-bottom: 		10px;
+@form-label-width: 				100px;
+@form-con-padding-left: 		10px;
+@form-tips-color: 				#ccc;
+@form-err-color: 				#f00;
+@form-link-color: 				#0f0;
+@form-tips-left: 				10px;
+
+//table表格
+@table-cell-padding: 			8px;
+@table-condensed-cell-padding: 	5px;
+@table-bg:                      transparent;
+@table-bg-accent:               #f9f9f9;
+@table-bg-hover:                #f5f5f5;
+@table-bg-active:               @table-bg-hover;
+@table-border-color:            #ddd;
+
+//page分页
+@page-padding-vertical: 		3px;
+@page-padding-horizontal: 		6px;
+@page-li-margin-left: 			6px;
+@page-a-height: 				22px;
+@page-li-color: 				#999;
+@page-li-color-border: 			#d8d8d8;
+@page-li-bg-color: 				#fff;
+@page-li-bg-color-hover: 		#0ba299;
+
+//tiptext 提示框
+@tiptext-padding: 				10px;
+@tiptext-err-bg-color: 			#fdeee9;
+@tiptext-warning-bg-color: 		#fefea4;
+@tiptext-success-bg-color: 		#e7ffce;
+@tiptext-question-bg-color: 	#e0f4ff;
+@tiptext-stop-bg-color: 		#fdeee9;
+@tiptext-err-color: 			#f0825d;
+@tiptext-warning-color: 		#EF5976;
+@tiptext-success-color: 		#72CD14;
+@tiptext-question-color: 	  	#66cae2;
+@tiptext-stop-color: 			#f0825d;
+@tiptext-border-radius: 		3px;
+@msg-margin-left: 				25px;
+@darken-precnet: 				10%;
+
+
+//提示文本框
+@tipbox-width: 					200px;
+@tipbox-bg-color: 				#000;
+@tipbox-opacity: 				0.6;
+@tipbox-border-radius: 			5px;
+@tipbox-padding-horizontal: 	10px;
+@tipbox-padding-vertical: 		20px;
+@tipbox-color: 					#fff;
+
+//弹出框
+@pop-bg-background: 			#000;
+@pop-opacity: 					0.7;
+@pop-width: 					712px;
+@pop-height: 					450px;
+@pop-background: 				#fff;
+@pop-color: 					#7ac3f0;
+@pop-index: 					1000;
+@pop-border: 					4px #7d7e7f solid;
+@pop-header-margin: 			18px 0 32px;
+@pop-header-padding: 			15px;
+@pop-header-bg: 				#91cdf3;
+@pop-header-height: 			32px;
+@pop-close-font-size: 			18px;
+@pop-close-top: 				-12px;
+@pop-close-right: 				-12px;
+@pop-close-bg: 					#fff;
+@pop-btn-margin: 				0 15px;
+
+
+//右侧导航less变量设置
+@sidebar-top: 					80px;
+@sidebar-li-bg: 				transparent;
+@sidebar-li-border-color: 		#563d7c;
+@sidebar-li1-padding-left: 		15px;
+@sidebar-li2-padding-left: 		30px;
+@sidebar-li2-padding-top: 		5px;
+@sidebar1-font-size: 			16px;
+@sidebar2-font-size: 			12px;
+@sidebar-color: 				@gray-dark;
+
+//doc样式变量设置值
+@headernav-color: 				#fff;
+@headernav-color-hover: 		#5AA3E2;
+@content-margin-bottom: 		40px;
+@wrap-margin-bottom: 			20px;
+@border-left: 					2px solid #2786D8;
+@wells-width: 					1000px;
+
+@ul-ul-padding-left: 			10px;
+@ul-ul-margin-bottom: 			10px;

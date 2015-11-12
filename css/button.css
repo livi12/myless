@@ -1,0 +1,355 @@
+.u-btn {
+  display: inline-block;
+  margin-bottom: 0;
+  vertical-align: middle;
+  font-weight: normal;
+  text-align: center;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+}
+.u-btn:hover,
+.u-btn:focus,
+.u-btn.focus {
+  color: #333333;
+  text-decoration: none;
+}
+.u-btn:active,
+.u-btn.active {
+  outline: 0;
+  background-image: none;
+}
+.u-btn.disabled,
+.u-btn[disabled],
+fieldset[disabled] .u-btn {
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.65;
+  filter: apha(opacity=65);
+}
+.u-btn-sm {
+  width: 50px;
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.u-btn-md {
+  width: 80px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+}
+.u-btn-lg {
+  width: 100px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  border-radius: 6px;
+}
+.u-btn-auto-sm {
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.u-btn-auto-md {
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+}
+.u-btn-auto-lg {
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  border-radius: 6px;
+}
+.u-btn-block-sm {
+  width: 100%;
+  display: block;
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.u-btn-block-md {
+  width: 100%;
+  display: block;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+}
+.u-btn-block-lg {
+  width: 100%;
+  display: block;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  border-radius: 6px;
+}
+.u-btn-default {
+  color: #333333;
+  background-color: #ffffff;
+  border-color: #cccccc;
+}
+.u-btn-default:hover,
+.u-btn-default:focus,
+.u-btn-default.focus,
+.u-btn-default:active,
+.u-btn-default.active {
+  color: #333333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+.u-btn-default:active,
+.u-btn-default.active {
+  background-image: none;
+}
+.u-btn-default.disabled,
+.u-btn-default[disable],
+fieldset[disabled] .u-btn-default,
+.u-btn-default.disabled:hover,
+.u-btn-default[disable]:hover,
+fieldset[disabled] .u-btn-default:hover,
+.u-btn-default.disabled:focus,
+.u-btn-default[disable]:focus,
+fieldset[disabled] .u-btn-default:focus,
+.u-btn-default.disabled.focus,
+.u-btn-default[disable].focus,
+fieldset[disabled] .u-btn-default.focus,
+.u-btn-default.disabled:active,
+.u-btn-default[disable]:active,
+fieldset[disabled] .u-btn-default:active,
+.u-btn-default.disabled.active,
+.u-btn-default[disable].active,
+fieldset[disabled] .u-btn-default.active {
+  background-color: #ffffff;
+  color: #333333;
+}
+.u-btn-default .badge {
+  color: #ffffff;
+  background-color: #333333;
+}
+.u-btn-primary {
+  color: #ffffff;
+  background-color: #72bf56;
+  border-color: #63b645;
+}
+.u-btn-primary:hover,
+.u-btn-primary:focus,
+.u-btn-primary.focus,
+.u-btn-primary:active,
+.u-btn-primary.active {
+  color: #ffffff;
+  background-color: #59a43e;
+  border-color: #4b8a34;
+}
+.u-btn-primary:active,
+.u-btn-primary.active {
+  background-image: none;
+}
+.u-btn-primary.disabled,
+.u-btn-primary[disable],
+fieldset[disabled] .u-btn-primary,
+.u-btn-primary.disabled:hover,
+.u-btn-primary[disable]:hover,
+fieldset[disabled] .u-btn-primary:hover,
+.u-btn-primary.disabled:focus,
+.u-btn-primary[disable]:focus,
+fieldset[disabled] .u-btn-primary:focus,
+.u-btn-primary.disabled.focus,
+.u-btn-primary[disable].focus,
+fieldset[disabled] .u-btn-primary.focus,
+.u-btn-primary.disabled:active,
+.u-btn-primary[disable]:active,
+fieldset[disabled] .u-btn-primary:active,
+.u-btn-primary.disabled.active,
+.u-btn-primary[disable].active,
+fieldset[disabled] .u-btn-primary.active {
+  background-color: #72bf56;
+  color: #ffffff;
+}
+.u-btn-primary .badge {
+  color: #72bf56;
+  background-color: #ffffff;
+}
+.u-btn-success {
+  color: #ffffff;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+.u-btn-success:hover,
+.u-btn-success:focus,
+.u-btn-success.focus,
+.u-btn-success:active,
+.u-btn-success.active {
+  color: #ffffff;
+  background-color: #449d44;
+  border-color: #398439;
+}
+.u-btn-success:active,
+.u-btn-success.active {
+  background-image: none;
+}
+.u-btn-success.disabled,
+.u-btn-success[disable],
+fieldset[disabled] .u-btn-success,
+.u-btn-success.disabled:hover,
+.u-btn-success[disable]:hover,
+fieldset[disabled] .u-btn-success:hover,
+.u-btn-success.disabled:focus,
+.u-btn-success[disable]:focus,
+fieldset[disabled] .u-btn-success:focus,
+.u-btn-success.disabled.focus,
+.u-btn-success[disable].focus,
+fieldset[disabled] .u-btn-success.focus,
+.u-btn-success.disabled:active,
+.u-btn-success[disable]:active,
+fieldset[disabled] .u-btn-success:active,
+.u-btn-success.disabled.active,
+.u-btn-success[disable].active,
+fieldset[disabled] .u-btn-success.active {
+  background-color: #5cb85c;
+  color: #ffffff;
+}
+.u-btn-success .badge {
+  color: #5cb85c;
+  background-color: #ffffff;
+}
+.u-btn-info {
+  color: #ffffff;
+  background-color: #5bc0de;
+  border-color: #46b8da;
+}
+.u-btn-info:hover,
+.u-btn-info:focus,
+.u-btn-info.focus,
+.u-btn-info:active,
+.u-btn-info.active {
+  color: #ffffff;
+  background-color: #31b0d5;
+  border-color: #269abc;
+}
+.u-btn-info:active,
+.u-btn-info.active {
+  background-image: none;
+}
+.u-btn-info.disabled,
+.u-btn-info[disable],
+fieldset[disabled] .u-btn-info,
+.u-btn-info.disabled:hover,
+.u-btn-info[disable]:hover,
+fieldset[disabled] .u-btn-info:hover,
+.u-btn-info.disabled:focus,
+.u-btn-info[disable]:focus,
+fieldset[disabled] .u-btn-info:focus,
+.u-btn-info.disabled.focus,
+.u-btn-info[disable].focus,
+fieldset[disabled] .u-btn-info.focus,
+.u-btn-info.disabled:active,
+.u-btn-info[disable]:active,
+fieldset[disabled] .u-btn-info:active,
+.u-btn-info.disabled.active,
+.u-btn-info[disable].active,
+fieldset[disabled] .u-btn-info.active {
+  background-color: #5bc0de;
+  color: #ffffff;
+}
+.u-btn-info .badge {
+  color: #5bc0de;
+  background-color: #ffffff;
+}
+.u-btn-warning {
+  color: #ffffff;
+  background-color: #f0ad4e;
+  border-color: #eea236;
+}
+.u-btn-warning:hover,
+.u-btn-warning:focus,
+.u-btn-warning.focus,
+.u-btn-warning:active,
+.u-btn-warning.active {
+  color: #ffffff;
+  background-color: #ec971f;
+  border-color: #d58512;
+}
+.u-btn-warning:active,
+.u-btn-warning.active {
+  background-image: none;
+}
+.u-btn-warning.disabled,
+.u-btn-warning[disable],
+fieldset[disabled] .u-btn-warning,
+.u-btn-warning.disabled:hover,
+.u-btn-warning[disable]:hover,
+fieldset[disabled] .u-btn-warning:hover,
+.u-btn-warning.disabled:focus,
+.u-btn-warning[disable]:focus,
+fieldset[disabled] .u-btn-warning:focus,
+.u-btn-warning.disabled.focus,
+.u-btn-warning[disable].focus,
+fieldset[disabled] .u-btn-warning.focus,
+.u-btn-warning.disabled:active,
+.u-btn-warning[disable]:active,
+fieldset[disabled] .u-btn-warning:active,
+.u-btn-warning.disabled.active,
+.u-btn-warning[disable].active,
+fieldset[disabled] .u-btn-warning.active {
+  background-color: #f0ad4e;
+  color: #ffffff;
+}
+.u-btn-warning .badge {
+  color: #f0ad4e;
+  background-color: #ffffff;
+}
+.u-btn-danger {
+  color: #ffffff;
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
+.u-btn-danger:hover,
+.u-btn-danger:focus,
+.u-btn-danger.focus,
+.u-btn-danger:active,
+.u-btn-danger.active {
+  color: #ffffff;
+  background-color: #c9302c;
+  border-color: #ac2925;
+}
+.u-btn-danger:active,
+.u-btn-danger.active {
+  background-image: none;
+}
+.u-btn-danger.disabled,
+.u-btn-danger[disable],
+fieldset[disabled] .u-btn-danger,
+.u-btn-danger.disabled:hover,
+.u-btn-danger[disable]:hover,
+fieldset[disabled] .u-btn-danger:hover,
+.u-btn-danger.disabled:focus,
+.u-btn-danger[disable]:focus,
+fieldset[disabled] .u-btn-danger:focus,
+.u-btn-danger.disabled.focus,
+.u-btn-danger[disable].focus,
+fieldset[disabled] .u-btn-danger.focus,
+.u-btn-danger.disabled:active,
+.u-btn-danger[disable]:active,
+fieldset[disabled] .u-btn-danger:active,
+.u-btn-danger.disabled.active,
+.u-btn-danger[disable].active,
+fieldset[disabled] .u-btn-danger.active {
+  background-color: #d9534f;
+  color: #ffffff;
+}
+.u-btn-danger .badge {
+  color: #d9534f;
+  background-color: #ffffff;
+}

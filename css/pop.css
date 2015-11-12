@@ -1,0 +1,63 @@
+.m-pop-bg {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: #000;
+  opacity: 0.7;
+  filter: apha(opacity=70);
+}
+.m-pop {
+  position: fixed;
+  width: 712px;
+  top: 50%;
+  left: 50%;
+  margin-left: -356px;
+  z-index: 1000;
+  background-color: #ffffff;
+  color: #7ac3f0;
+  border: 4px #7d7e7f solid;
+}
+.m-pop .pop-header {
+  margin: 18px 0 32px;
+  padding: 0 15px;
+  background-color: #91cdf3;
+  line-height: 1.42857143;
+  height: 32px;
+  line-height: 32px;
+  color: #333333;
+  overflow: hidden;
+  word-wrap: normal;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.m-pop .pop-header .pop-close {
+  cursor: pointer;
+  font-size: 18px;
+  color: #91cdf3;
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  line-height: 1;
+  background-color: #ffffff;
+  border-radius: 18px;
+}
+.m-pop .pop-header .pop-close:hover {
+  text-decoration: none;
+}
+.m-pop .pop-body {
+  padding: 0 15px;
+}
+.m-pop .pop-footer {
+  text-align: center;
+  padding: 15px;
+}
+.m-pop .pop-footer .pop-btn-group {
+  display: inline-block;
+  text-align: center;
+}
+.m-pop .pop-footer .pop-btn-group .u-btn {
+  margin: 0 15px;
+}

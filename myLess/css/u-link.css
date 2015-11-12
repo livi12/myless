@@ -1,0 +1,7 @@
+.u-link {
+  color: #72bf56;
+}
+.u-link:hover {
+  color: #4f9137;
+  text-decoration: underline;
+}

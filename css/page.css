@@ -1,0 +1,95 @@
+.m-page-wrap {
+  zoom: 1;
+  color: #999;
+}
+.m-page-wrap:after {
+  content: "\200B";
+  clear: both;
+  height: 0;
+  display: block;
+}
+.m-page-wrap > ul {
+  padding: 3px 6px;
+}
+.m-page-wrap li {
+  float: left;
+  margin-left: 6px;
+}
+.m-page-wrap li:first-child {
+  margin-left: 0;
+}
+.m-page-wrap li a {
+  color: #999999;
+  display: block;
+  height: 22px;
+  line-height: 22px;
+  padding: 0 6px;
+  text-align: center;
+  border: 1px solid #d8d8d8;
+  background-color: #ffffff;
+}
+.m-page-wrap li a:hover {
+  background-color: #0ba299;
+  color: #ffffff;
+  text-decoration: none;
+}
+.m-page-wrap .m-page-first a,
+.m-page-wrap .m-page-prev a,
+.m-page-wrap .m-page-last a,
+.m-page-wrap .m-page-next a {
+  width: auto;
+  padding: 0 6px;
+}
+.m-page-wrap .m-page-cur-page a {
+  background-color: #0ba299;
+  color: #ffffff !important;
+}
+.m-page-wrap .m-page-total span {
+  vertical-align: middle;
+  height: 22px;
+  line-height: 22px;
+  display: inline-block;
+}
+.m-page-wrap .m-page-go {
+  position: relative;
+  width: 155px;
+  text-align: left;
+}
+.m-page-wrap .m-page-go span {
+  vertical-align: middle;
+  height: 22px;
+  line-height: 22px;
+  display: inline-block;
+}
+.m-page-wrap .m-page-go span:first-child {
+  width: 26px;
+  text-align: center;
+}
+.m-page-wrap .m-page-go input[type="text"] {
+  position: relative;
+  z-index: 2;
+  height: 20px;
+  line-height: 20px;
+  width: 42px;
+  margin-left: 6px;
+  color: #999999;
+  vertical-align: middle;
+  border: 1px solid #d8d8d8;
+}
+.m-page-wrap .m-page-btn {
+  position: absolute;
+  left: 36px;
+  top: 0;
+  z-index: 1;
+}
+.m-page-wrap .m-page-btn button {
+  vertical-align: middle;
+  width: 40px;
+  height: 22px;
+  padding: 0 6px;
+  margin: 0 6px 0 0;
+  border: none;
+  background-color: #0ba299;
+  color: #ffffff;
+  cursor: pointer;
+}

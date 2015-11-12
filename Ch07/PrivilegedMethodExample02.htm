@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Privileged Method Example 2</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+        
+            (function(){
+            
+                var name = "";
+                
+                Person = function(value){                
+                    name = value;                
+                };
+                
+                Person.prototype.getName = function(){
+                    return name;
+                };
+                
+                Person.prototype.setName = function (value){
+                    name = value;
+                };
+            })();
+            
+            var person1 = new Person("Nicholas");
+            alert(person1.getName());   //"Nicholas"
+            person1.setName("Greg");
+            alert(person1.getName());   //"Greg"
+                               
+            var person2 = new Person("Michael");
+            alert(person1.getName());   //"Michael"
+            alert(person2.getName());   //"Michael"
+
+        </script>
+     
+    	<center>
+  <div style="font-size:15px; font-weight:bold; text-align:center; line-height:25px;">
+     源码由<a href="http://www.jq-school.com" target="_blank" style="color:#000">JquerySchool</a>网站整理（<a href="http://www.jq-school.com" target="_blank">http://www.jq-school.com</a>）学习交流QQ群<a target="_blank" href="http://wp.qq.com/wpa/qunwpa?idkey=f221dd676cd5f7f51f6b580ff8fe1bdd2fefe911ae0e1137a6f79c58d6e11ebf"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="Jquery学堂QQ⑧群" title="Jquery学堂QQ⑧群"></a></div>
+</center>
+</body>
+</html>

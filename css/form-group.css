@@ -1,0 +1,61 @@
+.m-form-group {
+  display: block;
+  width: 800px;
+}
+.m-form-group .form-item {
+  margin-bottom: 10px;
+  clear: both;
+}
+.m-form-group .form-item .form-label {
+  float: left;
+  text-align: right;
+  display: block;
+  width: 100px;
+  line-height: 20px;
+  padding: 7px 12px;
+  font-size: 14px;
+  border-radius: 4px;
+  vertical-align: top;
+}
+.m-form-group .form-item .form-con {
+  display: block;
+  margin-left: 124px;
+  line-height: 20px;
+  vertical-align: middle;
+}
+.m-form-group .form-item .form-con.form-con-padding {
+  padding: 7px 12px 7px 0;
+}
+.m-form-group .form-item .form-con .form-wrap {
+  margin-right: 10px;
+}
+.m-form-group .form-item .form-con .form-wrap .form-radio + span,
+.m-form-group .form-item .form-con .form-wrap .form-checkbox + span,
+.m-form-group .form-item .form-con .form-wrap span + .form-checkbox,
+.m-form-group .form-item .form-con .form-wrap span + .form-radio {
+  margin-left: 5px;
+}
+.m-form-group .form-item .form-con .form-tips {
+  color: #cccccc;
+  vertical-align: middle;
+}
+.m-form-group .form-item .form-con .form-err {
+  color: #ff0000;
+  margin-left: 10px;
+}
+.m-form-group .form-item .form-con .form-validate {
+  color: #ff0000;
+  margin-left: 10px;
+}
+.m-form-group .form-item .form-con .form-link {
+  color: #00ff00;
+}
+.m-form-group .form-item .form-con .info {
+  display: block;
+  clear: both;
+}
+.m-form-group .form-item .form-con .info .form-err,
+.m-form-group .form-item .form-con .info .form-validate,
+.m-form-group .form-item .form-con .info .form-link {
+  margin-left: 0;
+}

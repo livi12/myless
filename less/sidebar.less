@@ -1,0 +1,41 @@
+@import "variables.less";
+.docs-sidebar{
+	top:100px;
+	@nav : .nav;
+	@{nav}{
+        &>li{
+            & a{
+                background-color: transparent;
+                font-weight: normal;
+                color: @sidebar-color;
+                &:focus,&:hover,&.active{
+                    font-weight: 600;
+                    text-decoration: none;
+                    color: @sidebar-color;
+                }
+            }
+            >a{
+                padding-left: @sidebar-li1-padding-left;
+                font-size: @sidebar1-font-size;
+                &:focus,&:hover,&.active{
+                    padding-left: @sidebar-li1-padding-left - 2;
+                    border-left: 2px solid @sidebar-li-border-color;
+                }
+            }
+            & @{nav}{
+                &>li{
+                    >a{
+                        font-size: @sidebar2-font-size;
+                        padding-left: @sidebar-li2-padding-left;
+                        padding-top: @sidebar-li2-padding-top;
+                        padding-bottom: @sidebar-li2-padding-top;
+                        &:focus,&:hover,&.active{
+                            padding-left: @sidebar-li2-padding-left - 1;
+                            border-left: 1px solid @sidebar-li-border-color;
+                        }
+                    }
+                }
+            }
+        }
+	}
+}

@@ -1,0 +1,25 @@
+.u-textarea {
+  width: 300px;
+  padding: 7px 12px;
+  font-size: 14px;
+  border-radius: 6px;
+  outline: 0;
+  border: 1px solid #cccccc;
+  resize: none;
+}
+.u-textarea:hover,
+.u-textarea:focus,
+.u-textarea.focus {
+  color: #333333;
+}
+.u-textarea:hover,
+.u-textarea:focus,
+.u-textarea.focus,
+.u-textarea:hover:focus,
+.u-textarea:focus:focus,
+.u-textarea.focus:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow:  0 1px 1px rgba(0,0,0,.075) inset, 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow:  0 1px 1px rgba(0,0,0,.075) inset, 0 0 8px rgba(102, 175, 233, 0.6);
+}
